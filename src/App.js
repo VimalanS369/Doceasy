@@ -1,4 +1,6 @@
 import NavigationBar from './components/NavigationBar';
+import Footer from './components/Footer';
+
 import './App.css';
 
 function App() {
@@ -6,6 +8,7 @@ function App() {
 
     <div className="App">
      <NavigationBar/>
+     <Footer/>
     </div>
   );
 }
