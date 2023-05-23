@@ -1,0 +1,5 @@
+package com.doceasy.appointmentservice.config;
+
+public class WebClientConfig {
+
+}

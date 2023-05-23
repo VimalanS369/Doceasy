@@ -1,0 +1,5 @@
+package com.doceasy.availabilityservice.dto;
+
+public class AvailabilityResponse {
+
+}

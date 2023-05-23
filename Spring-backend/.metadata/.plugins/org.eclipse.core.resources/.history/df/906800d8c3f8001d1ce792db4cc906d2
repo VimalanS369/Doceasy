@@ -1,0 +1,20 @@
+package com.doceasy.availabilityservice.service;
+
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.doceasy.availabilityservice.repository.AvailabilityRepository;
+
+import lombok.RequiredArgsConstructor;
+
+@Service
+@RequiredArgsConstructor
+public class AvailabilityService {
+	
+      private  final AvailabilityRepository availabilityRepository;
+      
+      @Transactional(readOnly =true)
+      public boolean isInStock(String dCode) {
+      return availabilityRepository.findByDCode(dCode).isPresent();
+      }
+}

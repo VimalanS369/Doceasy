@@ -1,0 +1,28 @@
+package com.doceasy.availabilityservice.model;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "t_availability")
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+public class Availability {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    private String DCode;
+    private Integer quantity;
+    
+    
+
+}
+
+
+

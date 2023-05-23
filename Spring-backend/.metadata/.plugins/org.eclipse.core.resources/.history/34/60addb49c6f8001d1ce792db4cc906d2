@@ -1,0 +1,67 @@
+package com.doceasy.appointmentservice.service;
+
+import java.util.List;
+import java.util.UUID;
+
+import org.springframework.stereotype.Service;
+import org.springframework.web.reactive.function.client.WebClient;
+
+import com.doceasy.appointmentservice.dto.AppointmentLineItemsDto;
+import com.doceasy.appointmentservice.dto.AppointmentRequest;
+import com.doceasy.appointmentservice.model.Appointment;
+import com.doceasy.appointmentservice.model.AppointmentLineItems;
+import com.doceasy.appointmentservice.repository.AppointmentRepository;
+
+import jakarta.transaction.Transactional;
+import lombok.RequiredArgsConstructor;
+
+
+@Service
+@RequiredArgsConstructor
+@Transactional
+public class AppointmentService {
+	
+	private final AppointmentRepository appointmentRepository;
+	private final WebClient webClient;
+	public void placeAppointment(AppointmentRequest appointmentRequest) {
+	    Appointment appointment = new Appointment();
+	    appointment.setAppointmentNumber(UUID.randomUUID().toString());
+
+	    List<AppointmentLineItems> appointmentLineItems = appointmentRequest.getAppointmentLineItemsDtoList()
+	           .stream()
+	           .map(this::mapToDto)
+	           .toList();
+
+	    appointment.setAppointmentLineItemsList(appointmentLineItems);
+	    
+	    appointment.getAppointmentLineItemsList().stream()
+	                  .map(AppointmentLineItems::getDCode)
+	                  .toList(); 
+	    
+	    
+	    //Call Availability Service, and place order if product is in
+	    //stock
+	    Boolean result = webClient.get()
+	         .uri("http://localhost:8082/api/inventory")
+	         .retrieve()
+	         .bodyToMono(Boolean.class)
+	         .block();
+	    
+	    if(result) {
+	    	appointmentRepository.save(appointment);
+	    }
+	    else {
+	    	throw new IllegalArgumentException("Appointment Not Available, Please Try Again Later");
+	    }
+	}
+	
+	private AppointmentLineItems mapToDto(AppointmentLineItemsDto appointmentLineItemsDto) {
+		
+		AppointmentLineItems appointmentLineItems = new AppointmentLineItems();
+		appointmentLineItems.setPrice(appointmentLineItemsDto.getPrice());
+        appointmentLineItems.setQuantity(appointmentLineItemsDto.getQuantity());
+        appointmentLineItems.setDCode(appointmentLineItemsDto.getDCode());
+        return appointmentLineItems;
+	}
+
+}

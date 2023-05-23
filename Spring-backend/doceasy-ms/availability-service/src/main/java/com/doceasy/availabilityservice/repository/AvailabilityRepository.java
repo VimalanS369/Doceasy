@@ -1,0 +1,12 @@
+package com.doceasy.availabilityservice.repository;
+import java.util.*;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.doceasy.availabilityservice.model.Availability;
+
+public interface AvailabilityRepository  extends JpaRepository<Availability, Long> {
+  Optional<Availability> findByDCode(String DCode);
+
+List<Availability> findByDCodeIn(List<String> dCode);
+}
+ 

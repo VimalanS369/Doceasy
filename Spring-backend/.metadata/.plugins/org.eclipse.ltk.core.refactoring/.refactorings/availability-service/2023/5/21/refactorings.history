@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;AvailabilityResponse.java&apos; to &apos;appointment-service/src/main/java/com.doceasy.appointmentservice.dto&apos;&#x0D;&#x0A;- Original project: &apos;availability-service&apos;&#x0D;&#x0A;- Destination element: &apos;appointment-service/src/main/java/com.doceasy.appointmentservice.dto&apos;&#x0D;&#x0A;- Original element: &apos;com.doceasy.availabilityservice.dto.AvailabilityResponse.java&apos;" description="Copy compilation unit" destination="=appointment-service/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.doceasy.appointmentservice.dto" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.doceasy.availabilityservice.dto{AvailabilityResponse.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1684776773227" units="1" version="1.0"/>
+</session>
