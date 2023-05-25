@@ -15,23 +15,26 @@ public class AvailabilityServiceApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(AvailabilityServiceApplication.class, args);}
 	
-     @Bean
-     public CommandLineRunner loadData(AvailabilityRepository availabilityRepository) {
-	 return args-> {
-		 Availability availability = new Availability();
-		 availability.setDCode("cardio");
-		 availability.setQuantity(100);
+//     @Bean
+//     public CommandLineRunner loadData(AvailabilityRepository availabilityRepository) {
+//	 return args-> {
+//		 Availability availability = new Availability();
+// Enable This to HardCode Availability Or use Database
+// Saving Same Object will lead to No auto tranfer of Data from List of Appointments to Add Appointment page
+		 //		 availability.setDCode("cardio");
+//		 availability.setQuantity(100);
+//		 availability.setPrice(700);
 		 
-		 Availability availability1 = new Availability();
-		 availability1.setDCode("neuro");
-		 availability1.setQuantity(1);
-		  
-		 availabilityRepository.save(availability);
-		 availabilityRepository.save(availability1);
+//		 Availability availability1 = new Availability();
+//		 availability1.setDCode("neuro");
+//		 availability1.setQuantity(1);
+//		  
+//		 availabilityRepository.save(availability);
+//		 availabilityRepository.save(availability1);
+//		 
 		 
-		 
-	 };	
-	}
+//	 };	
+//	}
      
 	}
 

@@ -12,7 +12,9 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 
 public class DoctorRequest {
+	private String did;
 	private String name;
     private String description;
+    private String department;
     private BigDecimal fee;
 }

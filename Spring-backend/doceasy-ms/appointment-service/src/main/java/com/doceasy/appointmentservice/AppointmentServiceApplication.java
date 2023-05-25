@@ -12,14 +12,14 @@ public class AppointmentServiceApplication {
 
 	/*
 	{ "appointmentLineItemsDtoList":[
-	                                 {"dcode" : "cardio",
-	                                 "price" : 1200,
-	                               "quantity" : 1
-	                               
-	                                 }
-	                                ]
+    {"dCode" : "neuro",
+    "price" : 1200,
+  "quantity" : 0
+  
+    }
+   ]
 
-	                             }
+}
 
    */
 }

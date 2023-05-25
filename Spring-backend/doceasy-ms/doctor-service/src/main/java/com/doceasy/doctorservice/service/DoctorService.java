@@ -22,8 +22,10 @@ public class DoctorService {
 
 public void createDoctor(DoctorRequest doctorRequest) {
     Doctor doctor = Doctor.builder()
-            .name(doctorRequest.getName())
+    		.name(doctorRequest.getName())
+            .did(doctorRequest.getDid())
             .description(doctorRequest.getDescription())
+            .department(doctorRequest.getDepartment())
             .fee(doctorRequest.getFee())
             .build();
 
@@ -40,8 +42,10 @@ public List<DoctorResponse> getAllDoctors() {
 private DoctorResponse mapToDoctorResponse(Doctor doctor) {
     return DoctorResponse.builder()
             .id(doctor.getId())
+            .did(doctor.getDid())
             .name(doctor.getName())
             .description(doctor.getDescription())
+            .department(doctor.getDepartment())
             .fee(doctor.getFee())
             .build();
 }

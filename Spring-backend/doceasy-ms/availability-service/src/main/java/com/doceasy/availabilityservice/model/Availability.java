@@ -19,6 +19,7 @@ public class Availability {
     private Long id;
     private String DCode;
     private Integer quantity;
+    private Integer price;
     
     
 

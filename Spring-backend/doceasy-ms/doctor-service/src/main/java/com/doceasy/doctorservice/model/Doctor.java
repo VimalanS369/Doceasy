@@ -17,7 +17,9 @@ import java.math.BigDecimal;
 public class Doctor {
 	 @Id
 	    private String id;
+	    private String did;
 	    private String name;
+	    private String department;
 	    private String description;
 	    private BigDecimal fee;
 

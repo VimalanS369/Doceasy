@@ -4,9 +4,10 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
 import com.doceasy.availabilityservice.dto.AvailabilityResponse;
+import com.doceasy.availabilityservice.model.Availability;
 import com.doceasy.availabilityservice.repository.AvailabilityRepository;
+
 
 import lombok.RequiredArgsConstructor;
 
@@ -26,4 +27,6 @@ public class AvailabilityService {
     			         .build()
     		  ).toList();
       }
+
+	
 }
