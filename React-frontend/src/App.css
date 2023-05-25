@@ -1,0 +1,45 @@
+li{
+    list-style: none;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .image-circle {
+    width: 100px; /* Adjust the size as needed */
+    height: 100px; /* Adjust the size as needed */
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .image-circle .rounded-circle {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .background-image {
+    background-image: url('');
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .overlay-text {
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 250px;
+    text-shadow: 2px 2px 5px black;
+  }
+
+  .small-image {
+    width: 100px;
+    height: 100px;
+  }
