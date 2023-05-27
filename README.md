@@ -10,7 +10,7 @@ THINGS IMPLEMENTED
   
 -Hibernate JPA :  Each Microservice is connected to A Separate Database
   -Doctor       - MongoDb
-  -Appointment  - MySQl
+  -Appointment  - MySQL
   -Availability - MySQL
   
 -MicroService Communication :Appointment ms & Availability ms Communicate With Each other to Know if There is Availability for a Doctor if true then Appointment is booked & details stored in Database
