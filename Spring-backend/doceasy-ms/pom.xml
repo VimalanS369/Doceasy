@@ -18,9 +18,7 @@
   <modules>
   	<module>doctor-service</module>
   	<module>appointment-service</module>
-  	<module>availability-service</module>
-  	<module>signlogin</module>
-  	
+  	<module>availability-service</module> 	
   </modules>
   <properties>
   <maven.compiler.source>17</maven.compiler.source>
