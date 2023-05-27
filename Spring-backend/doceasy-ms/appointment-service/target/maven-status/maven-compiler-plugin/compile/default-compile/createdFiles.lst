@@ -1,0 +1,11 @@
+com\doceasy\appointmentservice\model\AppointmentLineItems.class
+com\doceasy\appointmentservice\dto\AppointmentLineItemsDto.class
+com\doceasy\appointmentservice\model\Appointment.class
+com\doceasy\appointmentservice\dto\AvailabilityResponse$AvailabilityResponseBuilder.class
+com\doceasy\appointmentservice\config\WebClientConfig.class
+com\doceasy\appointmentservice\controller\AppointmentController.class
+com\doceasy\appointmentservice\repository\AppointmentRepository.class
+com\doceasy\appointmentservice\dto\AppointmentRequest.class
+com\doceasy\appointmentservice\AppointmentServiceApplication.class
+com\doceasy\appointmentservice\service\AppointmentService.class
+com\doceasy\appointmentservice\dto\AvailabilityResponse.class

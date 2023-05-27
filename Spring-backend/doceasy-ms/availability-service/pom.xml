@@ -4,10 +4,12 @@
     <groupId>com.doceasy</groupId>
     <artifactId>doceasy-ms</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <relativePath>../../doceasy-ms/pom.xml</relativePath>
   </parent>
   <artifactId>availability-service</artifactId>
   <name>availability-service</name>
   <description>availability-service</description>
+  
   
   <dependencies>
 <dependency>
@@ -22,6 +24,11 @@
 <groupId>com.mysql</groupId>
 <artifactId>mysql-connector-j</artifactId>
 <scope>runtime</scope>
+</dependency>
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>8.0.33</version>
 </dependency>
 <dependency>
 <groupId>org.projectlombok</groupId>

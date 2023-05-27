@@ -1,0 +1,10 @@
+C:\Users\Admin\Documents\workspace-sts\FSD\microservices\doceasy-ms\appointment-service\src\main\java\com\doceasy\appointmentservice\model\Appointment.java
+C:\Users\Admin\Documents\workspace-sts\FSD\microservices\doceasy-ms\appointment-service\src\main\java\com\doceasy\appointmentservice\model\AppointmentLineItems.java
+C:\Users\Admin\Documents\workspace-sts\FSD\microservices\doceasy-ms\appointment-service\src\main\java\com\doceasy\appointmentservice\AppointmentServiceApplication.java
+C:\Users\Admin\Documents\workspace-sts\FSD\microservices\doceasy-ms\appointment-service\src\main\java\com\doceasy\appointmentservice\service\AppointmentService.java
+C:\Users\Admin\Documents\workspace-sts\FSD\microservices\doceasy-ms\appointment-service\src\main\java\com\doceasy\appointmentservice\config\WebClientConfig.java
+C:\Users\Admin\Documents\workspace-sts\FSD\microservices\doceasy-ms\appointment-service\src\main\java\com\doceasy\appointmentservice\dto\AppointmentRequest.java
+C:\Users\Admin\Documents\workspace-sts\FSD\microservices\doceasy-ms\appointment-service\src\main\java\com\doceasy\appointmentservice\dto\AvailabilityResponse.java
+C:\Users\Admin\Documents\workspace-sts\FSD\microservices\doceasy-ms\appointment-service\src\main\java\com\doceasy\appointmentservice\dto\AppointmentLineItemsDto.java
+C:\Users\Admin\Documents\workspace-sts\FSD\microservices\doceasy-ms\appointment-service\src\main\java\com\doceasy\appointmentservice\repository\AppointmentRepository.java
+C:\Users\Admin\Documents\workspace-sts\FSD\microservices\doceasy-ms\appointment-service\src\main\java\com\doceasy\appointmentservice\controller\AppointmentController.java

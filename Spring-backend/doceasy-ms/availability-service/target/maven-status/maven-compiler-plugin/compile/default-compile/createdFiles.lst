@@ -1,0 +1,7 @@
+com\doceasy\availabilityservice\model\Availability.class
+com\doceasy\availabilityservice\AvailabilityServiceApplication.class
+com\doceasy\availabilityservice\repository\AvailabilityRepository.class
+com\doceasy\availabilityservice\service\AvailabilityService.class
+com\doceasy\availabilityservice\controller\AvailabilityController.class
+com\doceasy\availabilityservice\dto\AvailabilityResponse$AvailabilityResponseBuilder.class
+com\doceasy\availabilityservice\dto\AvailabilityResponse.class
