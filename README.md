@@ -22,3 +22,8 @@ THINGS THAT ARE YET TO BE IMPLEMENTED
 
 -Unit Testing : Unit Test with help of JUnit Needs to be Implemented 
 
+
+THINGS THAT CAN BE IMPLEMENTED TO ADD MORE FEATURES
+-Role Based Login : Role Based Login For Doctor to Input their Availability
+-Admin Panel : Admin panel for an Admin to Verify and Add or Edit Doctors
+
